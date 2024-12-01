@@ -40,7 +40,6 @@ This dataset gives information related to heart disease. The dataset contains 13
 - Slope of the Peak Exercise ST Segment
 - Number of Major Vessels Colored by Fluoroscopy
 - Thalassemia
-  Target
 
 ### Target variable
 
