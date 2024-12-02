@@ -1,73 +1,64 @@
-/* Reset some default styles */
-body,
-h1,
-form {
-  margin: 0;
-  padding: 0;
-}
+/* static/styles.css */
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-}
-
-/* Center the form and result */
-body {
+  background-color: #f0f0f0; /* Light gray background */
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
 
-/* Style the form */
-form {
-  width: 50%;
-  margin: 0 auto;
+.container {
   background-color: #fff;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Set a wider width for desktop */
+  max-width: 600px; /* Limit maximum width for larger screens */
 }
 
-.form-group {
-  margin: 10px 0;
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; /* Add margin to the top of the form */
 }
 
 label {
-  display: block;
-  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333; /* Dark gray text color */
 }
 
-input[type="text"],
+input,
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px;
 }
 
-/* Style the submit button */
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+button {
+  background-color: #4caf50;
   color: #fff;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
-  background-color: #0056b3;
+button:hover {
+  background-color: #45a049;
 }
 
-/* Style the result header */
-h1 {
-  text-align: center;
-  font-size: 24px;
-  color: #333;
+.result {
   margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border around the result */
+  border-radius: 4px;
+  background-color: #f9f9f9; /* Slightly off-white background */
+  color: #333; /* Dark gray text color */
 }
